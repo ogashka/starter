@@ -1,0 +1,12 @@
+@import "_config/var";
+@import "_config/fonts";
+@import "_config/mobil";
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+@import "libs/*.scss";
+@import "style/*.scss";

@@ -1,0 +1,50 @@
+.header{
+    &__container{
+        @include make-container();
+        @include max-container();
+    }
+    &__row{
+        @include make-row();
+    }
+    &__logo{
+        padding-top: 50px;
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(3);
+        }
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+        span{
+            color: green;
+            font-weight: bold;
+            font-size: 35px;
+            @include media(md){
+                color: red;
+            }
+        }
+        @include media(md){
+            border: 1px solid #000;
+        }
+    }
+    &__menu{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(5);
+            @include make-col-offset(1);
+        }
+        @include media-breakpoint-up(sm) {
+            @include make-col(4);
+            @include make-col-offset(2);
+        }
+    }
+    &__btn{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(3);
+        }
+    }
+    @include media(sm){
+        background-color: yellow;
+    }
+}

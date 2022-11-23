@@ -1,6 +1,9 @@
 @import "_config/var";
 @import "_config/fonts";
-@import "_config/mobil";
+@import "_mixins/bgi";
+@import "_mixins/flex";
+@import "_mixins/media";
+
 
 body{
     padding: 0;
